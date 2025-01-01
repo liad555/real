@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple gallery</title>
+</head>
+<style>
+    img[src^=th] {
+        width: 250px;
+        margin-bottom: 20px;
+        display: block;
+        border: 1px solid #000
+    }
+
+    img[src^=big] {
+        width: 600px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: none;
+    }
+
+    img[src^=th]:hover+img[src^=big] {
+        display: block
+    }
+</style>
+
+<body>
+    <img src="thBird.jpg" alt="bird">
+    <img src="bigBird.jpg" alt="birdb">
+    <img src="thbosch.png" alt="car">
+    <img src="bigbosch.png" alt="carb">
+
+
+
+</body>
+
+</html>

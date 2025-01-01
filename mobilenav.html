@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile nav</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            width: 500px;
+            height: 40px;
+            background-color: #000;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            float: left;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color;
+            #fff;
+            text-align: center;
+            width: 100px;
+            font-size: 1.2em;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        @media (max-width:550px) {
+            .hamburger {
+                width: 100%;
+                display: block;
+            }
+
+            nav ul li {
+                clear: both;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="hamburger">&#8801;</div>
+        <ul>
+            <li>
+                <a href="#">heading</a>
+            </li>
+            <li>
+                <a href="#">heading</a>
+            </li>
+            <li>
+                <a href="#">heading</a>
+            </li>
+            <li>
+                <a href="#">heading</a>
+            </li>
+            <li>
+                <a href="#">heading</a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

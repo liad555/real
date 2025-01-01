@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute selectors</title>
+    <style>
+        a[title="home sweet home"] {
+            color: red;
+            background-color: orange;
+        }
+
+        a[title~="home"] {
+            color: aqua;
+            background-color: navy;
+        }
+
+        a[title*="ho"] {
+            color: purple;
+
+        }
+
+        a[href^="http"] {
+            color: yellow;
+            background-color: purple;
+
+        }
+
+        a[href$="pdf"] {
+            color: #000;
+            background-color: purple;
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#" title="home sweet home">home</a>
+        </li>
+        <li>
+            <a href="#" title="home bitter home">about</a>
+        </li>
+        <li>
+            <a href="#" title="homosepian">media</a>
+        </li>
+        <li>
+            <a href="http://www.walla.co.il">walla</a>
+        </li>
+        <li>
+            <a href="http://www.ynet.co.il">ynet</a>
+        </li>
+        <li>
+            <a href="map.pdf" download="map.pdf">download map</a>
+        </li>
+    </ul>
+
+</body>
+
+</html>

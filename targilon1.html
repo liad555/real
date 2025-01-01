@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>targilon1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 90vw;
+            height: 30px;
+            background-color: blueviolet;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        div {
+            background-color: brown;
+        }
+
+        .container {
+            background-color: blueviolet;
+            width: 60vw;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>header</header>
+        <div class="container">
+            <div class="box1">box1</div>
+            <div class="box2">box2</div>
+            <div class="box3">box3</div>
+        </div>
+        <aside id="aside">aside</aside>
+        <div class="main">main</div>
+        <div class="footer">footer</div>
+    </div>
+
+
+</body>
+
+</html>

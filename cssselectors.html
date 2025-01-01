@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        div>h1 {
+            color: #f00;
+            font-size: 20pt;
+            font-family: serif;
+
+        }
+
+        h1+p {
+            color: hotpink;
+            font-size: 16pt;
+        }
+
+        h1~p {
+            color: darkgoldenrod;
+            font-size: 16pt;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <p>the content</p>
+            <h1>the content</h1>
+            <p>the content</p>
+            <h2>the content</h2>
+            <p>the content</p>
+        </header>
+        <p>the content</p>
+        <h1>the content</h1>
+        <p>the content</p>
+        <p>the content</p>
+    </div>
+
+</body>
+
+</html>

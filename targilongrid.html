@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targilon Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 70vw;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 200px 400px 100px;
+            gap: 20px;
+        }
+
+        .item {
+            background-color: pink;
+        }
+
+        .header,
+        .footer {
+            grid-column: 1/5;
+        }
+
+        .aside {
+            grid-column: 4/5;
+            grid-row: 2/4;
+        }
+
+        .main {
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item header">aaa</div>
+        <div class="item box1">bbb</div>
+        <div class="item box2">ccc</div>
+        <div class="item box3">ddd</div>
+        <div class="item main">eee</div>
+        <div class="item aside">fff</div>
+        <div class="item footer">ggg</div>
+    </div>
+</body>
+
+</html>

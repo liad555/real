@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=grid2, initial-scale=1.0">
+    <title>grid2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80vw;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 200px);
+            gap: 20px
+        }
+
+        .item {
+            font-size: 1.2rem;
+            text-align: center;
+            font-family: arial;
+            padding: 15px;
+            color: #fff;
+        }
+
+        .item1 {
+            background-color: red;
+            grid-column: 1/4;
+        }
+
+        .item2 {
+            background-color: green;
+        }
+
+        .item3 {
+            background-color: blue;
+
+
+        }
+
+        .item4 {
+            background-color: orange;
+            grid-row: 2/4;
+            grid-column: 3/4;
+        }
+
+        .item5 {
+            background-color: purple;
+        }
+
+        .item6 {
+            background-color: orchid;
+            /* grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2; */
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">red</div>
+        <div class="item item2">green</div>
+        <div class="item item3">blue</div>
+        <div class="item item4">orange</div>
+        <div class="item item5">purple</div>
+        <div class="item item6">orchid</div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
